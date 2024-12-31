@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Elias Lefebre</h1>
+        <p>Researcher | Sound Programmer</p>
+    </div>
+
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Insert text</p>
+    </section>
+
+    <section id="work">
+        <h2>Portfolio</h2>
+          <!-- Tag Filter Buttons -->
+          <div class="filter-buttons">
+            <button onclick="filterItems('all')">All</button>
+            <button onclick="filterItems('sound-design')">Sound Design</button>
+            <button onclick="filterItems('music')">Music</button>
+            <button onclick="filterItems('technology')">Technology</button>
+        </div>
+
+        <div class="portfolio-container">
+            <div class="portfolio-item" data-tags="technology">
+                <a href="portfolio-gradwork.html">
+                    <img src="image1.jpg" alt="Project 1 Image">
+                    <h3>XR-Spatialization Environment</h3>
+                </a>
+                <p>Short description of Project 1.</p>
+                <div class="tags">
+                    <span>Technology</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-tags="sound-design">
+                <a href="project2.html">
+                    <img src="image2.jpg" alt="Project 2 Image">
+                    <h3>Project Title 2</h3>
+                </a>
+                <p>Short description of Project 2.</p>
+                <div class="tags">
+                    <span>sound-design</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-tags="music">
+                <a href="project2.html">
+                    <img src="image3.jpg" alt="Project 2 Image">
+                    <h3>Project Title 2</h3>
+                </a>
+                <p>Short description of Project 2.</p>
+                <div class="tags">
+                    <span>music</span>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <p>Email: <a href="eliaslefebre@ymail.com">eliaslefebre@ymail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Elias Lefebre</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
