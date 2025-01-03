@@ -3,22 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>Portfolio - The Proxi-Chord</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+         .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .text {
+            flex: 1;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Project Title 1</h1>
+        <h1>The Proxi-Chord</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="#work">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section>
-        <h2>About This Project</h2>
-        <p>Detailed description of the project. You can include the tools used, challenges, outcomes, and links to demos or videos.</p>
+        <div class="container">
+            <div class="text">
+                <p>The goal of this project was to explore the world of <strong>New Interfaces for Musical Expression (NIMEs)</strong> creation. For this, I created the <strong>ProxiChord</strong>.</p>
+            </div>
+            <div class="image">
+                <img src="nime.jpg" alt="ProxiChord image">
+            </div>
+        </div>
+            <div class="container">
+                <div class="image">
+                    <img src="Diagram.png" alt="ProxiChord image">
+                </div>
+                <div class="text">
+                    <p>On the left you can see a schematic of the instrument. It uses 2 UltraSonic distance sensors and 4 buttons.</p>
+                    <ul>
+                        <li><strong>The pitch sensor</strong> selects what note you want to play.</li>
+                        <li><strong>The volume sensor</strong> changes the volume of that note.</li>
+                    </ul>
+                    <p>
+                        You can also disable the volume sensor by pressing the <strong>"Change Volume Input Mode"</strong> button. 
+                        In that case, the note gets triggered when the <strong>"Play Sound"</strong> button is pressed.
+                    </p>
+                    <p>There are also 3 modes:</p>
+                    <ul>
+                        <li><strong>Bass Mode</strong> - Plays notes lower in the register.</li>
+                        <li><strong>Lead Mode</strong> - Plays notes higher in the register.</li>
+                        <li><strong>Sample Mode</strong> - Plays drum samples depending on what note you select.</li>
+                    </ul>
+                </div>
+            </div>
+        <div class="container">
+            <div class="text">
+                <p>Arduino was used to connect the sensors to the computer. To play sound according to the data, I used a program called <strong>Pure Data</strong>.</p>
+                <p>Both Arduino and Pure Data were pretty new to me, so this was something I learned a lot from.</p>
+            </div>
+            <div class="image">
+                <img src="PureData.png" alt="ProxiChord image">
+            </div>
+        </div>
     </section>
 
     <footer>
