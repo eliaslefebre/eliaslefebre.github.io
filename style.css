@@ -49,7 +49,7 @@ section {
 }
 
 .portfolio-item {
-    flex: 1 1 350px;
+    flex: 1 1 300px;
     max-width: 350px; /* Ensure items do not exceed a fixed width */
     height: flex; /* Set a fixed height for all items */
     display: flex;
