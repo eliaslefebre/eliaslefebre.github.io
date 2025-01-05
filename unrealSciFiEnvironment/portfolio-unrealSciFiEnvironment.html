@@ -3,26 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>Portfolio - Sci-Fi Environment</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .description-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Project Title 1</h1>
+        <h1>Sci-Fi Environment Project</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="#work">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section>
-        <h2>About This Project</h2>
-        <p>Detailed description of the project. You can include the tools used, challenges, outcomes, and links to demos or videos.</p>
+        <div class="video-container">
+            <div cass = "video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TXfkQGCI1F0?si=hBQRJAMpKf5J5-6a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="description-container">
+            <div class="text">
+                <h2>Description:</h2>
+                <p>For the course <strong>Environments 1</strong> at DAE, we had to create a sci-fi environment in Unreal.</p>
+                <h2>My Contribution:</h2>
+                <ul>
+                    <li>Modeling in Blender</li>
+                    <li>Making a map layout</li>
+                    <li>Creating modular assets</li>
+                    <li>Placing modular assets in Unreal</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Elias Lefebre</p>
+        <p>© 2024 Your Name</p>
     </footer>
 </body>
 </html>

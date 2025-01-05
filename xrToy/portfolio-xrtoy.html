@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>Portfolio - Extended Reality Music Toy</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .images img {
+            max-width: 48%;
+            height: auto;
+            object-fit: contain;
+        }
+        .video-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .video-section .description {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .video-section video {
+            flex: 1;
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Project Title 1</h1>
+        <h1>Extended Reality Music Toy</h1>
         <nav>
             <a href="../index.html">Home</a>
             <a href="#work">Portfolio</a>
@@ -17,8 +44,43 @@
     </header>
 
     <section>
-        <h2>About This Project</h2>
-        <p>Detailed description of the project. You can include the tools used, challenges, outcomes, and links to demos or videos.</p>
+        <div class="container">
+            <h1>XR Event Highlights</h1>
+            <p>Placeholder text describing the context of where these photos were taken. This can include details about the event, the technology being showcased, or the participants involved.</p>
+    
+            <div class="images">
+                <img src="XR2.jpg" alt="A person using XR technology with guitar and keyboard.">
+                <img src="XR3.jpg" alt="Collage of people interacting with XR technology.">
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="description">
+                <p>Placeholder text for the description of the video. Explain what the video demonstrates or highlights, adding any relevant context about the content or its significance.</p>
+            </div>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-section">
+            <div class="description">
+                <p>Placeholder text for the description of the video. Explain what the video demonstrates or highlights, adding any relevant context about the content or its significance.</p>
+            </div>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-section">
+            <div class="description">
+                <p>Placeholder text for the description of the video. Explain what the video demonstrates or highlights, adding any relevant context about the content or its significance.</p>
+            </div>
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
     <footer>

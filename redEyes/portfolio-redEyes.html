@@ -3,22 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>portfolio - Red Eyes</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .collage img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Project Title 1</h1>
+        <h1>Red Eyes</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="#work">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section>
-        <h2>About This Project</h2>
-        <p>Detailed description of the project. You can include the tools used, challenges, outcomes, and links to demos or videos.</p>
+
+        
+        <div class="video-container">
+            <div cass = "video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-_a8jckSYIU?si=BwTiuQEGIqdofqmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Summary: </h1>
+            <p>This project was an <strong>art project</strong> made during <strong>Game Art 2</strong> while I was following the Indie Game Development program. The idea for the game revolved around a story of a man who falls asleep on an airplane and dreams that he died. If developed further, the game would have taken him through all his core memories.</p>
+            <p>The focus of this project was creating <strong>art assets</strong>.</p>
+    
+            <h2>My Contribution:</h2>
+            <ul>
+                <li>3D modeling of props</li>
+                <li>3D character modeling</li>
+                <li>Making environments in Unity</li>
+                <li>Programming in C#</li>
+            </ul>
+        </div>
+
+        <div class="collage">
+            <img src="All Props.PNG" alt="Shot 1">
+            <img src="Shot1.PNG" alt="Shot 2">
+            <img src="Shot2.PNG" alt="Shot 3">
+            <img src="Shot3.PNG" alt="Shot 4">
+        </div>
+  
     </section>
 
     <footer>

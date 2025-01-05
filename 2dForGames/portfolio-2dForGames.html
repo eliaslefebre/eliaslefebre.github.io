@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title 1</title>
+    <title>portfolio - 2D for games</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .collage img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Project Title 1</h1>
+        <h1>2D for games</h1>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="#work">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section>
-        <h2>About This Project</h2>
-        <p>Detailed description of the project. You can include the tools used, challenges, outcomes, and links to demos or videos.</p>
+        <div class="collage">
+            <img src="ModelSheet.jpg" alt="Shot 1">
+            <img src="Final.jpg" alt="Shot 2">
+        </div>
+
+        <div class="collage">
+            <img src="CrazyBunch.jpg" alt="Shot 3">
+            <img src="CrazyBunchFinal.jpg" alt="Shot 4">
+        </div>
     </section>
 
     <footer>
