@@ -50,8 +50,8 @@ section {
 
 .portfolio-item {
     flex: 1 1 300px;
-    max-width: 300px; /* Ensure items do not exceed a fixed width */
-    height: 450px; /* Set a fixed height for all items */
+    max-width: 350px; /* Ensure items do not exceed a fixed width */
+    height: flex; /* Set a fixed height for all items */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Space out content evenly */
@@ -220,4 +220,12 @@ footer {
 video {
     max-width: 100%;
     height: auto;
+}
+
+.project-year {
+    font-size: 0.9em; /* Slightly smaller font */
+    color: #bdbdbd; /* Softer gray color */
+    text-align: center; /* Center-align the year */
+    margin-top: 10px; /* Add spacing from the tags */
+    font-style: italic; /* Optional: make the year italic */
 }
