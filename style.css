@@ -50,6 +50,12 @@ section {
 
 .portfolio-item {
     flex: 1 1 300px;
+    max-width: 300px; /* Ensure items do not exceed a fixed width */
+    height: 450px; /* Set a fixed height for all items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    align-items: center;
     border: 1px solid #333; /* Darker border */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
@@ -107,7 +113,6 @@ footer {
     padding: 10px 20px;
     margin: 5px;
     border: none;
-    background-color: #90caf9;
     color: #121212;
     border-radius: 5px;
     cursor: pointer;
@@ -119,6 +124,7 @@ footer {
     transform: scale(1.05); /* Slightly larger on hover */
 }
 
+
 .tags {
     margin-top: 10px;
     display: flex;
@@ -127,11 +133,29 @@ footer {
     justify-content: center; /* Center-align tags */
 }
 
+
+/* Unique colors for each tag */
+.tag-research {
+    background-color: #f7b63f; /* Light orange */
+}
+
+.tag-programming {
+    background-color: #4caf50; /* Green */
+}
+
+.tag-sound {
+    background-color: #6fd8e6; /* Cyan */
+}
+
+.tag-art {
+    background-color: #b377e4; /* Pink */
+}
+
+/* Default styles for tags */
 .tags span {
-    background-color: #90caf9; /* Match the accent color */
     color: #121212; /* Contrast text */
     padding: 5px 10px;
-    border-radius: 15px; /* Rounded edges */
+    border-radius: 15px;
     font-size: 0.85em;
     font-weight: bold;
     text-align: center;
@@ -139,9 +163,6 @@ footer {
     transition: background-color 0.3s;
 }
 
-.tags span:hover {
-    background-color: #64b5f6; /* Slightly lighter color on hover */
-}
 
 /* Banner Styling */
 .banner {
