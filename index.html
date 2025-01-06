@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,30 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .about-section img {
+            width: 200px;
+            /* Adjust size as needed */
+            height: auto;
+        }
+
+        .about-text {
+            flex: 1;
+            /* Ensures the text takes up the remaining space */
+        }
+        .section-heading {
+    color: #90caf9; /* Blue color for this specific heading */
+}
+    </style>
 </head>
+
 <body>
     <div class="banner">
         <h1>Elias Lefebre</h1>
@@ -24,43 +48,63 @@
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p><!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>About Me</title>
-            </head>
-            <body>
-                        I graduated <strong>cum laude</strong> in 2024 with a Bachelor’s degree in 
-                        <strong>Game Development</strong> (specializing in <strong>Game Sound Integration</strong>) 
-                        from <strong>Digital Arts & Entertainment</strong> at <strong>Howest</strong>. 
-                        From 2019 to 2021, I studied <strong>Independent Game Development (2021-2024)</strong> because I was drawn to the idea of creating and managing my own projects, showcasing my entrepreneurial mindset. During a group project in my fourth semester, I discovered my passion for sound design. That summer, I decided to pivot and change my major to <strong>Game Sound Integration</strong>, aligning my studies with my newfound interest.
-                    </p>
-                    <p>
-                        My main specialization is <strong>programming</strong>, with extensive experience in <strong>C#</strong>, a language I began learning in high school. I also have experience working with <strong>C++</strong>, and recently, I’ve developed a keen interest in <strong>Python</strong> due to its applications in AI. I enjoy tackling challenges and creating meaningful projects by leveraging new and emerging technologies.
-                    </p>
-                    <p>
-                        I’m incredibly grateful for the opportunity to start my professional journey at <strong>DAE Research</strong>. 
-                        It was here that I delved into cutting-edge technologies like <strong>XR</strong> and <strong>AI</strong>, learning not just about the tools, but also the value of teamwork and collaboration. The inspiring people I’ve worked with have shaped my approach to problem-solving and innovation.
-                    </p>
-                    <p>
-                        Two of the latest projects featured in my portfolio highlight my work with <strong>XR</strong>. 
-                        As for AI, I’m still exploring its possibilities, which is why I don’t yet have AI-based projects to showcase. 
-                        For the future, I aim to build solutions that not only push technological boundaries but also positively impact the people who interact with them. To me, innovation is not just about technology—it’s about connecting with people and making a difference.
-                    </p>
-                </section>
-            </body>
-            </html>
+    <p> </p>
+
+    <section id="about-section">
+        <h1 class="section-heading">About Me</h1>
+        <section class="about-section">
+            <img src="Education.png" alt="Graduation Cap Icon">
+            <div class="about-text">
+                <p>
+                    I graduated <strong>cum laude</strong> in 2024 with a bachelor's degree in
+                    <strong>Game Development</strong> (specialization in <strong>Game Sound Integration</strong>)
+                    from <strong>Digital Arts & Entertainment</strong>.
+                </p>
+                <p>
+                    From 2019 to 2021, I studied <strong>Independent Game Development</strong> because, in high school,
+                    I was fascinated by how video games combined art and programming to allow people to experience
+                    stories.
+                    During a group project in my 4th semester, I discovered a love for audio, after which I decided to
+                    pivot
+                    to <strong>Game Sound Integration</strong> (2021–2024).
+                </p>
+            </div>
+        </section>
+        <section class="about-section">
+            <img src="Skills.png" alt="Skills Icon">
+            <p>
+                My main specialization is <strong>programming</strong>. <strong>C#</strong> is my strongest language,
+                which I have been working with since high school. I also have experience working in
+                <strong>C++</strong>.
+                Recently, I've developed a strong interest in <strong>Python</strong> because of its usage in AI.
+                Although I’m specialized in programming, I also enjoy creating visual and auditory art and am familiar
+                with the software used to create these, such as <strong>Reaper</strong>, <strong>Blender</strong>, and
+                <strong>Photoshop</strong>.
             </p>
+        </section>
+        <section class="about-section">
+            <img src="Passion.png" alt="Skills Icon">
+            <p>
+                I'm passionate about exploring and learning new technologies and finding ways to use them in meaningful
+                ways.
+                I enjoy being challenged and exploring outside of my comfort zone.
+                The two technologies I've been mainly exploring are <strong>Extended Reality (XR)</strong> and
+                <strong>Artificial Intelligence (AI)</strong>. Two of the latest projects featured in my portfolio
+                highlight my work with XR. As for AI, I’m actively learning and exploring its possibilities, which is
+                why I don’t yet have AI-based projects to showcase.
+            </p>
+        </section>
+        <h3>
+            Feel free to connect with me on <a href="https://www.linkedin.com/in/your-profile-link" target="_blank">LinkedIn</a>.
+        </h3>
     </section>
+
+    <p> </p>
 
     <section id="work">
         <h2>Portfolio</h2>
-          <!-- Tag Filter Buttons -->
-          <div class="filter-buttons">
+        <!-- Tag Filter Buttons -->
+        <div class="filter-buttons">
             <button onclick="filterItems('all')">All</button>
             <button class="tag-research" onclick="filterItems('Research')">Research</button>
             <button class="tag-programming" onclick="filterItems('Programming')">Programming</button>
@@ -90,9 +134,9 @@
                 </a>
                 <p>Tools used: C#, Unity, OSC, Reaper</p>
                 <div class="tags">
-                <span class="tag-research">Research</span>
-                <span class="tag-programming">Programming</span>
-                <span class="tag-sound">Sound</span>
+                    <span class="tag-research">Research</span>
+                    <span class="tag-programming">Programming</span>
+                    <span class="tag-sound">Sound</span>
                 </div>
                 <div class="project-year">2024</div>
             </div>
@@ -134,7 +178,7 @@
                 </div>
                 <div class="project-year">2023</div>
             </div>
-          
+
             <div class="portfolio-item" data-tags="Programming Sound Research">
                 <a href="nime/portfolio-nime.html">
                     <img src="nime/nime.jpg" alt="Project 2 Image">
@@ -142,7 +186,7 @@
                 </a>
                 <p>Tools used: Arduino, PureData</p>
                 <div class="tags">
-                <span class="tag-research">Research</span>
+                    <span class="tag-research">Research</span>
                     <span class="tag-programming">Programming</span>
                     <span class="tag-sound">Sound</span>
                 </div>
@@ -222,16 +266,20 @@
             <!-- Add more portfolio items as needed -->
         </div>
     </section>
+    
+    <p> </p>
+
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h1 class="section-heading">Contact</h1>
         <p>Feel free to reach out!</p>
         <p>Email: <a href="eliaslefebre@ymail.com">eliaslefebre@ymail.com</a></p>
     </section>
-
     <footer>
         <p>© 2024 Elias Lefebre</p>
     </footer>
     <script src="script.js"></script>
+    <p> </p>
 </body>
+
 </html>

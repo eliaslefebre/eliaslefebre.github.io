@@ -15,6 +15,7 @@ header {
 }
 
 header h1 {
+    color: #90caf9;
     margin: 0;
     font-size: 2.5em;
 }
@@ -193,12 +194,14 @@ footer {
 
 .banner h1,
 .banner p {
+    color: #90caf9;
     position: relative;
     z-index: 2; /* Places text above overlay */
     margin: 0;
 }
 
 .banner h1 {
+    color: #90caf9;
     font-size: 3em; /* Larger font for name */
     font-weight: bold;
 }
@@ -206,6 +209,7 @@ footer {
 .banner p {
     font-size: 1.2em; /* Smaller subtitle font */
     margin-top: 10px;
+    
 }
 
 /* Center the video container */
