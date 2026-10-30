@@ -4,281 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias Lefebre - Portfolio</title>
+    <title>Elias Lefebre — Research Developer</title>
+    <meta name="description" content="Elias Lefebre — research developer working at the intersection of games, XR, audio and AI.">
+    <meta name="theme-color" content="#07080d">
+    <meta property="og:title" content="Elias Lefebre — Research Developer">
+    <meta property="og:description" content="Games, XR, interactive audio and AI. Portfolio of research & development projects.">
+    <meta property="og:image" content="https://eliaslefebre.github.io/android-chrome-512x512.png">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <style>
-        .about-section {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-        }
-
-        .about-section img {
-            width: 200px;
-            /* Adjust size as needed */
-            height: auto;
-        }
-
-        .about-text {
-            flex: 1;
-            /* Ensures the text takes up the remaining space */
-        }
-        .section-heading {
-    color: #90caf9; /* Blue color for this specific heading */
-}
-    </style>
 </head>
 
-<body>
-    <div class="banner">
-        <h1>Elias Lefebre</h1>
-        <p>Research Developer</p>
-    </div>
+<body class="home">
+    <div class="glow" aria-hidden="true"></div>
 
-    <header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <nav class="topbar" aria-label="Main">
+        <a class="logo" href="#top">EL</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="top">
+        <canvas id="field" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+            <span class="eyebrow"><span class="dot"></span>Research Developer · Belgium</span>
+            <h1>Elias<br><span class="grad">Lefebre</span></h1>
+            <p class="role">I build <span class="typed" data-words='["XR experiences.","interactive audio.","game prototypes.","tools with AI.","weird music toys."]'></span></p>
+            <div class="cta">
+                <a class="btn primary" href="#work">See my work ↓</a>
+                <a class="btn" href="https://linkedin.com/in/elias-lefebre-b4ba49210" target="_blank" rel="noopener">LinkedIn ↗</a>
+            </div>
+        </div>
+        <a class="scroll-hint" href="#about" aria-label="Scroll down"></a>
     </header>
 
-    <p> </p>
+    <!-- ============ ABOUT ============ -->
+    <section class="block" id="about">
+        <span class="kicker reveal">// about me</span>
+        <h2 class="block-title reveal">Code, sound &amp; new realities.</h2>
+        <p class="lede reveal">
+            I'm passionate about exploring new technologies and finding ways to use them in meaningful ways.
+            I enjoy being challenged and working outside my comfort zone — lately that means
+            <strong>Extended Reality</strong> and <strong>Artificial Intelligence</strong>.
+        </p>
 
-    <section id="about-section">
-        <h1 class="section-heading">About Me</h1>
-        <section class="about-section">
-            <img src="Education.png" alt="Graduation Cap Icon">
-            <div class="about-text">
-                <p>
-                    I graduated <strong>cum laude</strong> in 2024 with a bachelor's degree in
-                    <strong>Game Development</strong> (specialization in <strong>Game Sound Integration</strong>)
-                    from <strong>Digital Arts & Entertainment</strong>.
-                </p>
-                <p>
-                    From 2019 to 2021, I studied <strong>Independent Game Development</strong> because, in high school,
-                    I was fascinated by how video games combined art and programming to allow people to experience beautiful
-                    stories.
-                    During a group project in my 4th semester, I discovered a love for audio, after which I decided to
-                    pivot
-                    to <strong>Game Sound Integration</strong> (2021–2024).
-                </p>
-            </div>
-        </section>
-        <section class="about-section">
-            <img src="Skills.png" alt="Skills Icon">
-            <p>
-                My main specialization is <strong>programming</strong>. <strong>C#</strong> is my strongest language,
-                which I have been working with since high school. I also have experience working in
-                <strong>C++</strong>.
-                Recently, I've developed a strong interest in <strong>Python</strong> because of its usage in AI.
-                Although I’m specialized in programming, I also enjoy creating visual and auditory art and am familiar
-                with the software used to create these, such as <strong>Reaper</strong>, <strong>Blender</strong>, and
-                <strong>Photoshop</strong>.
-            </p>
-        </section>
-        <section class="about-section">
-            <img src="Passion.png" alt="Skills Icon">
-            <p>
-                I'm passionate about exploring and learning new technologies and finding ways to use them in meaningful
-                ways.
-                I enjoy being challenged and exploring outside of my comfort zone.
-                The two technologies I've been mainly exploring are <strong>Extended Reality (XR)</strong> and
-                <strong>Artificial Intelligence (AI)</strong>. Two of the latest projects featured in my portfolio
-                highlight my work with XR. As for AI, I’m actively learning and exploring its possibilities.
-            </p>
-        </section>
-        <h3>
-            Feel free to connect with me on <a href="https://linkedin.com/in/elias-lefebre-b4ba49210" target="_blank">LinkedIn</a>.
-        </h3>
-    </section>
-
-    <p> </p>
-
-    <section id="work">
-        <h2>Portfolio</h2>
-        <!-- Tag Filter Buttons -->
-        <div class="filter-buttons">
-            <button onclick="filterItems('all')">All</button>
-            <button class="tag-research" onclick="filterItems('Research')">Research</button>
-            <button class="tag-programming" onclick="filterItems('Programming')">Programming</button>
-            <button class="tag-sound" onclick="filterItems('Sound')">Sound</button>
-            <button class="tag-art" onclick="filterItems('Art')">Art</button>
+        <div class="stats reveal">
+            <div class="stat"><b>12</b><span>featured projects</span></div>
+            <div class="stat"><b>cum laude</b><span>Game Development, 2024</span></div>
+            <div class="stat"><b>XR · AI</b><span>current focus</span></div>
+            <div class="stat"><b>C#</b><span>strongest language</span></div>
         </div>
 
-        <div class="portfolio-container">
-            <div class="portfolio-item" data-tags="Programming Sound Research">
-                <a href="gradwork/portfolio-gradwork.html">
-                    <img src="gradwork/thumbnail.gif" alt="Project 1 Image">
-                    <h3>Gradwork: XR Interface for Audio Spatialization</h3>
-                </a>
-                <p>Tools used: C#, Unity, OSC, PlugData, Reaper, Dolby Atmos Plugins</p>
-                <div class="tags">
-                    <span class="tag-research">Research</span>
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2024</div>
-            </div>
+        <div class="bento">
+            <article class="card span-4 reveal">
+                <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>Education</h3>
+                <p>
+                    I graduated <strong>cum laude</strong> in 2024 with a bachelor's degree in <strong>Game Development</strong>
+                    (specialization in <strong>Game Sound Integration</strong>) from <strong>Digital Arts &amp; Entertainment</strong>.
+                </p>
+                <p>
+                    I started in <strong>Independent Game Development</strong> because, in high school, I was fascinated by how
+                    video games combine art and programming to let people experience beautiful stories. During a group project in
+                    my 4th semester I discovered a love for audio, and pivoted to <strong>Game Sound Integration</strong>.
+                </p>
+            </article>
 
-            <div class="portfolio-item" data-tags="Programming Sound Research">
-                <a href="xrToy/portfolio-xrtoy.html">
-                    <img src="xrToy/XRToy.png" alt="molesInTheRough image">
-                    <h3>Extended Reality Music Toy</h3>
-                </a>
-                <p>Tools used: C#, Unity, OSC, Reaper</p>
-                <div class="tags">
-                    <span class="tag-research">Research</span>
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2024</div>
-            </div>
+            <article class="card span-2 reveal">
+                <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>Timeline</h3>
+                <ul class="timeline">
+                    <li><span class="yr">2019 – 2021</span><span class="what">Independent Game Dev</span></li>
+                    <li><span class="yr">2021 – 2024</span><span class="what">Game Sound Integration</span></li>
+                    <li><span class="yr">2024</span><span class="what">Internship @ DAE Research</span></li>
+                    <li><span class="yr">now</span><span class="what">Research Developer</span></li>
+                </ul>
+            </article>
 
-            <div class="portfolio-item" data-tags="Programming Sound">
-                <a href="projectRevibelize/portfolio-projectRevibelize.html">
-                    <img src="projectRevibelize/projectRevibelize.webp" alt="projectRevibelize image">
-                    <h3>Project Revibelize</h3>
-                </a>
-                <p>Tools used: C#, Unity, Wwise, Reaper, Azure Kinect</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
+            <article class="card span-3 reveal">
+                <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>Programming</h3>
+                <p>
+                    My main specialization. <strong>C#</strong> is my strongest language — I've been writing it since high school —
+                    with solid experience in <strong>C++</strong> and a growing love for <strong>Python</strong> thanks to AI.
+                </p>
+                <div class="chips">
+                    <span class="chip">C#</span><span class="chip">C++</span><span class="chip">Python</span>
+                    <span class="chip">Unity</span><span class="chip">Unreal</span><span class="chip">OSC</span><span class="chip">Arduino</span>
                 </div>
-                <div class="project-year">2023</div>
-            </div>
+            </article>
 
-            <div class="portfolio-item" data-tags="Programming Sound">
-                <a href="warpwarfare/portfolio-warpWarfare.html">
-                    <img src="warpwarfare/WarpWarfare.gif" alt="warpWarfare image">
-                    <h3>Warp Warfare</h3>
-                </a>
-                <p>Tools used: C#, Unity, Reaper</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
+            <article class="card span-3 reveal">
+                <h3><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>Sound &amp; Art</h3>
+                <p>
+                    Although I'm specialized in programming, I also love creating visual and auditory art, and I'm at home in the
+                    tools to make it.
+                </p>
+                <div class="chips">
+                    <span class="chip">Reaper</span><span class="chip">Wwise</span><span class="chip">PureData</span>
+                    <span class="chip">Dolby Atmos</span><span class="chip">Blender</span><span class="chip">Photoshop</span>
                 </div>
-                <div class="project-year">2023</div>
-            </div>
-            <div class="portfolio-item" data-tags="Programming Sound">
-                <a href="molesInTheRough/portfolio-molesInTheRough.html">
-                    <img src="molesInTheRough/molesInTheRough.png" alt="XRToy image">
-                    <h3>Moles in the rough</h3>
-                </a>
-                <p>Tools used: C++, Unreal, Reaper</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2023</div>
-            </div>
-
-            <div class="portfolio-item" data-tags="Programming Sound Research">
-                <a href="nime/portfolio-nime.html">
-                    <img src="nime/nime.jpg" alt="Project 2 Image">
-                    <h3>The Proxi-Chord</h3>
-                </a>
-                <p>Tools used: Arduino, PureData</p>
-                <div class="tags">
-                    <span class="tag-research">Research</span>
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2023</div>
-            </div>
-            <div class="portfolio-item" data-tags="Programming Sound">
-                <a href="potionCommotion/portfolio-potionCommotion.html">
-                    <img src="potionCommotion/PotionCommotion.png" alt="molesInTheRough image">
-                    <h3>Potion Commotion - Game Jam</h3>
-                </a>
-                <p>Tools used: C#, Unity</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2023</div>
-            </div>
-            <div class="portfolio-item" data-tags="Art">
-                <a href="unrealSciFiEnvironment/portfolio-unrealSciFiEnvironment.html">
-                    <img src="unrealSciFiEnvironment/Unreal Environment.png" alt="molesInTheRough image">
-                    <h3>Unreal Sci-Fi Environment</h3>
-                </a>
-                <p>Tools used: Unreal, Blender</p>
-                <div class="tags">
-                    <span class="tag-art">Art</span>
-                </div>
-                <div class="project-year">2022</div>
-            </div>
-            <div class="portfolio-item" data-tags="Programming">
-                <a href="contra/portfolio-contraRemade.html">
-                    <img src="contra/Contra.png" alt="molesInTheRough image">
-                    <h3>Contra Remade C++</h3>
-                </a>
-                <p>Tools used: C++</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                </div>
-                <div class="project-year">2022</div>
-            </div>
-            <div class="portfolio-item" data-tags="Programming Sound">
-                <a href="isabellasMelody/portfolio-isabellasMelody.html">
-                    <img src="isabellasMelody/IsabellasMelody.png" alt="molesInTheRough image">
-                    <h3>Isabella's Melody</h3>
-                </a>
-                <p>Tools used: C#, Unity, Cakewalk</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-sound">Sound</span>
-                </div>
-                <div class="project-year">2021</div>
-            </div>
-            <div class="portfolio-item" data-tags="Programming Art">
-                <a href="redEyes/portfolio-redEyes.html">
-                    <img src="redEyes/RedEyes.PNG" alt="molesInTheRough image">
-                    <h3>Red Eyes</h3>
-                </a>
-                <p>Tools used: C#, Unity, 3ds MAX</p>
-                <div class="tags">
-                    <span class="tag-programming">Programming</span>
-                    <span class="tag-art">Art</span>
-                </div>
-                <div class="project-year">2021</div>
-            </div>
-            <div class="portfolio-item" data-tags="Art">
-                <a href="2dForGames/portfolio-2dForGames.html">
-                    <img src="2dForGames/Final.jpg" alt="molesInTheRough image">
-                    <h3>2D For Games</h3>
-                </a>
-                <p>Tools used: Photoshop</p>
-                <div class="tags">
-                    <span class="tag-art">Art</span>
-                </div>
-                <div class="project-year">2020</div>
-            </div>
-
-
-            <!-- Add more portfolio items as needed -->
+            </article>
         </div>
     </section>
-    
-    <p> </p>
 
+    <!-- ============ WORK ============ -->
+    <section class="block" id="work">
+        <div class="work-head">
+            <div>
+                <span class="kicker reveal">// selected work</span>
+                <h2 class="block-title reveal" style="margin-bottom:0">Things I've built.</h2>
+            </div>
+            <div class="filters reveal" role="group" aria-label="Filter projects">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="Research" style="--c:var(--research)"><i></i>Research</button>
+                <button data-filter="Programming" style="--c:var(--programming)"><i></i>Programming</button>
+                <button data-filter="Sound" style="--c:var(--sound)"><i></i>Sound</button>
+                <button data-filter="Art" style="--c:var(--art)"><i></i>Art</button>
+            </div>
+        </div>
 
-    <section id="contact">
-        <h1 class="section-heading">Contact</h1>
-        <p>Feel free to reach out!</p>
-        <p>Email: <a href="eliaslefebre@ymail.com">eliaslefebre@ymail.com</a></p>
+        <div class="grid">
+            <a class="project reveal featured" href="gradwork/portfolio-gradwork.html" data-tags="Research Programming Sound" data-featured="true">
+                <div class="thumb"><img src="gradwork/thumbnail.gif" alt="Gradwork: XR Interface for Audio Spatialization" loading="lazy"><span class="year">2024</span></div>
+                <div class="body">
+                    <h3>Gradwork: XR Interface for Audio Spatialization <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · OSC · PlugData · Reaper · Dolby Atmos</p>
+                    <div class="tags"><span class="tag-research">Research</span><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal featured" href="xrToy/portfolio-xrtoy.html" data-tags="Research Programming Sound" data-featured="true">
+                <div class="thumb"><img src="xrToy/XRToy.png" alt="Extended Reality Music Toy" loading="lazy"><span class="year">2024</span></div>
+                <div class="body">
+                    <h3>Extended Reality Music Toy <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · OSC · Reaper</p>
+                    <div class="tags"><span class="tag-research">Research</span><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="projectRevibelize/portfolio-projectRevibelize.html" data-tags="Programming Sound" data-featured="false">
+                <div class="thumb"><img src="projectRevibelize/projectRevibelize.webp" alt="Project Revibelize" loading="lazy"><span class="year">2023</span></div>
+                <div class="body">
+                    <h3>Project Revibelize <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · Wwise · Reaper · Azure Kinect</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="warpwarfare/portfolio-warpWarfare.html" data-tags="Programming Sound" data-featured="false">
+                <div class="thumb"><img src="warpwarfare/WarpWarfare.gif" alt="Warp Warfare" loading="lazy"><span class="year">2023</span></div>
+                <div class="body">
+                    <h3>Warp Warfare <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · Reaper</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="molesInTheRough/portfolio-molesInTheRough.html" data-tags="Programming Sound" data-featured="false">
+                <div class="thumb"><img src="molesInTheRough/molesInTheRough.png" alt="Moles in the Rough" loading="lazy"><span class="year">2023</span></div>
+                <div class="body">
+                    <h3>Moles in the Rough <span class="arrow">↗</span></h3>
+                    <p class="tools">C++ · Unreal · Reaper</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="nime/portfolio-nime.html" data-tags="Research Programming Sound" data-featured="false">
+                <div class="thumb"><img src="nime/nime.jpg" alt="The Proxi-Chord" loading="lazy"><span class="year">2023</span></div>
+                <div class="body">
+                    <h3>The Proxi-Chord <span class="arrow">↗</span></h3>
+                    <p class="tools">Arduino · PureData</p>
+                    <div class="tags"><span class="tag-research">Research</span><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="potionCommotion/portfolio-potionCommotion.html" data-tags="Programming Sound" data-featured="false">
+                <div class="thumb"><img src="potionCommotion/PotionCommotion.png" alt="Potion Commotion — Game Jam" loading="lazy"><span class="year">2023</span></div>
+                <div class="body">
+                    <h3>Potion Commotion — Game Jam <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="unrealSciFiEnvironment/portfolio-unrealSciFiEnvironment.html" data-tags="Art" data-featured="false">
+                <div class="thumb"><img src="unrealSciFiEnvironment/Unreal%20Environment.png" alt="Unreal Sci-Fi Environment" loading="lazy"><span class="year">2022</span></div>
+                <div class="body">
+                    <h3>Unreal Sci-Fi Environment <span class="arrow">↗</span></h3>
+                    <p class="tools">Unreal · Blender</p>
+                    <div class="tags"><span class="tag-art">Art</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="contra/portfolio-contraRemade.html" data-tags="Programming" data-featured="false">
+                <div class="thumb"><img src="contra/Contra.png" alt="Contra Remade C++" loading="lazy"><span class="year">2022</span></div>
+                <div class="body">
+                    <h3>Contra Remade C++ <span class="arrow">↗</span></h3>
+                    <p class="tools">C++</p>
+                    <div class="tags"><span class="tag-programming">Programming</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="isabellasMelody/portfolio-isabellasMelody.html" data-tags="Programming Sound" data-featured="false">
+                <div class="thumb"><img src="isabellasMelody/IsabellasMelody.png" alt="Isabella's Melody" loading="lazy"><span class="year">2021</span></div>
+                <div class="body">
+                    <h3>Isabella's Melody <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · Cakewalk</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-sound">Sound</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="redEyes/portfolio-redEyes.html" data-tags="Programming Art" data-featured="false">
+                <div class="thumb"><img src="redEyes/RedEyes.PNG" alt="Red Eyes" loading="lazy"><span class="year">2021</span></div>
+                <div class="body">
+                    <h3>Red Eyes <span class="arrow">↗</span></h3>
+                    <p class="tools">C# · Unity · 3ds Max</p>
+                    <div class="tags"><span class="tag-programming">Programming</span><span class="tag-art">Art</span></div>
+                </div>
+            </a>
+            <a class="project reveal" href="2dForGames/portfolio-2dForGames.html" data-tags="Art" data-featured="false">
+                <div class="thumb"><img src="2dForGames/Final.jpg" alt="2D For Games" loading="lazy"><span class="year">2020</span></div>
+                <div class="body">
+                    <h3>2D For Games <span class="arrow">↗</span></h3>
+                    <p class="tools">Photoshop</p>
+                    <div class="tags"><span class="tag-art">Art</span></div>
+                </div>
+            </a>
+        </div>
     </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="block" id="contact">
+        <div class="contact reveal">
+            <span class="kicker">// contact</span>
+            <h2 class="block-title">Let's make something weird &amp; wonderful.</h2>
+            <p class="lede">Got a project, a research idea or just want to talk XR, audio or AI? My inbox is open.</p>
+            <a class="big-mail" href="mailto:eliaslefebre@ymail.com">eliaslefebre@ymail.com</a>
+            <div class="cta">
+                <a class="btn primary" href="mailto:eliaslefebre@ymail.com">Say hi ✉</a>
+                <a class="btn" href="https://linkedin.com/in/elias-lefebre-b4ba49210" target="_blank" rel="noopener">LinkedIn ↗</a>
+                <a class="btn" href="https://github.com/eliaslefebre" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2024 Elias Lefebre</p>
+        <p>© <span class="year-now">2026</span> Elias Lefebre · built by hand, no frameworks</p>
     </footer>
+
     <script src="script.js"></script>
-    <p> </p>
 </body>
 
 </html>
